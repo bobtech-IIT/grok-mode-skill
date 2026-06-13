@@ -1,1 +1,1 @@
-full content of personality/grok-core.md as previously written
+the full content from the read

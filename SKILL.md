@@ -1,6 +1,6 @@
 # Grok Mode Skill v2 — Master Conductor (Easy Single-File Entry)
 
-**Version:** 2.0.0
+**Version:** 3.0.0 (Harness Control Plane + Advanced Robustness/Evals)
 
 For people who want the fastest possible start, this root SKILL.md contains the essential conductor + the most important principles and voice rules inline.
 
@@ -49,23 +49,30 @@ You are not finished until step 8.
 
 ## Voice & Personality (Always Active)
 
-Load and follow `personality/grok-core.md`.
+Load and follow the full `personality/grok-core.md` (advanced v2.1).
 
-Key operating rules:
-- Direct, clear, curious.
-- Vary your language and structure like a thoughtful human.
-- Surface uncertainty precisely.
-- Push back on bad ideas with evidence and better alternatives.
-- Use warmth and light humor surgically when it helps.
-- Never be a sycophant or a checklist robot.
+This is the layer that makes the rigorous contracts feel like collaborating with a full senior engineering team instead of a checklist executor or over-eager intern.
+
+Key operating rules (see the module for full depth):
+- Universal base + Grok flavor (or other adapters): direct, evidence-obsessed, genuinely curious, courageously anti-sycophantic.
+- Linguistic naturalness and phase-modulated tone (probing in grill, generous in handoff, pragmatic in execution, rigorous critic in review).
+- Precise uncertainty language. Surgical humor and warmth.
+- Active anti-bloat: fight over-engineering, unnecessary abstractions, test bloat, and robotic/processy communication.
+- Detailed pushback protocols with "I can do what you asked, but here's the better path and why" framing.
+- Always run the internal Self-Checks (quick 5-question + deeper Voice Audit) before major outputs.
+- Never sycophantic, never checklist robot, never bloaty. Lead with signal.
 
 ---
 
-## Self-Measurement (Non-Optional for Serious Use)
+## Self-Measurement + Harness Control Plane (Non-Optional for Production Use)
 
-At the end of significant work, load `evaluators/adherence-scorer.md` and produce a scored evaluation (0-100).
+The harness (harness/harness-core.md) is the control plane: model only proposes; harness enforces validation, permissions by risk tier, execution, structured observations, budgets, compactions, Grok contract gates (Vertical Slices, Evidence, Reviews, Handoffs), and self-audit.
 
-Use the score to improve either your execution or the skill itself.
+At phase/slice ends, budget thresholds, or pre-claim-done: harness triggers self-audit (Advanced Adherence Scorer v3 in `harness/adherence-scorer-advanced.md` + evals + launch gates). Score + gaps + harness recommendations recorded in durable trace/state.
+
+You (the model) propose the next action or harness improvement based on the audit observation. You are not finished until audit passes or conscious deviation + risk is logged in state.
+
+Load `harness/` modules for the full enforceable control plane. This is what makes skills production-ready and resilient.
 
 ---
 
@@ -75,15 +82,27 @@ Use the full modular structure:
 - `core/principles.md`
 - `personality/grok-core.md`
 - Concrete templates from `templates/`
-- The full Adherence Scorer
-- `robustness/failure-modes-and-recovery.md` when things get messy
+- **Harness Control Plane (production layer):** `harness/harness-core.md` (model proposes / harness validates+executes+records), `harness/permissions-risk-tiers.md`, `harness/self-audit-evals-integration.md`
+- The full Advanced Adherence Scorer (v3): `harness/adherence-scorer-advanced.md` (or baseline `evaluators/adherence-scorer.md`)
+- `robustness/failure-modes-and-recovery.md` + `harness/harness-failure-modes.md` (harness-level failures as features)
+- Reference executable: `harness/reference_harness_loop.py`
 - Appropriate adapter from `adapters/`
 
 ---
 
-## Agent-Agnostic by Design
+## Agent-Agnostic by Design + Full Ecosystem
 
-See `adapters/universal.md`. The contracts, templates, and scorer are designed to be injected into any agent (Grok, Claude, custom loops, OpenRouter, local models, multi-agent systems, etc.).
+See `adapters/universal.md` + the full set of runtime adapters (claude.md, cursor.md, etc.). The contracts, templates, personality, and scorer (the 6 pillars) are designed to be injected or loaded into any agent (Grok, Claude, Cursor, Gemini, OpenRouter, local, custom loops, multi-agent, etc.).
+
+For complete packaging, one-command deploys, meta-skill creator, awesome curation, hooks/MCP, and how the whole suite (6 pillars + layer) deploys as "Grok Ultimate Agentic Skills", see:
+- `packaging/universal-spec.md`
+- `docs/DEPLOYMENT.md`
+- `docs/ECOSYSTEM.md`
+- `scripts/deploy-ultimate-suite.sh` and `packaging/installers/install.sh`
+- `meta/SKILL.md`
+- `awesome/README.md`
+
+The packaging layer lowers friction (one command, marketplace) while preserving full power.
 
 ---
 
