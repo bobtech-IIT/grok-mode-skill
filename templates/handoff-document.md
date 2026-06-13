@@ -1,1 +1,1 @@
-handoff template
+full content of the handoff template

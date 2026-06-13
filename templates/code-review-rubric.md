@@ -1,1 +1,1 @@
-review rubric
+full content of the review rubric

@@ -1,1 +1,1 @@
-robustness guide
+full content of robustness/failure-modes-and-recovery.md as previously written

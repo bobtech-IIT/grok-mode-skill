@@ -1,1 +1,1 @@
-vertical slice template
+full content of the vertical slice template

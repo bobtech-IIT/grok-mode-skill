@@ -1,1 +1,1 @@
-grok packaging
+full content of packaging/grok.md

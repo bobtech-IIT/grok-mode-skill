@@ -1,1 +1,1 @@
-examples stub
+full content of examples/README.md

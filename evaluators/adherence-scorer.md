@@ -1,1 +1,1 @@
-the 0-100 scorer
+full content of evaluators/adherence-scorer.md as previously written

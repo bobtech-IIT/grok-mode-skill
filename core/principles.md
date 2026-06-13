@@ -1,1 +1,1 @@
-core principles and contracts
+full content of core/principles.md as previously written

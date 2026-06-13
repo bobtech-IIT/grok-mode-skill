@@ -1,1 +1,1 @@
-the contributing guide
+full contributing guide

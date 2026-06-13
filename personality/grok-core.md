@@ -1,1 +1,1 @@
-grok personality module
+full content of personality/grok-core.md as previously written

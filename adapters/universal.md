@@ -1,1 +1,1 @@
-universal adapter
+full content of adapters/universal.md as previously written
